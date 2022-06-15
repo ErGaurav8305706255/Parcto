@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'fifthpage.dart';
-class Fourthpage extends StatefulWidget {
-  const Fourthpage({Key? key}) : super(key: key);
+class FourthPage extends StatefulWidget {
+  const FourthPage({Key? key}) : super(key: key);
 
   @override
-  State<Fourthpage> createState() => _FourthpageState();
+  State<FourthPage> createState() => _FourthPageState();
 }
 
-class _FourthpageState extends State<Fourthpage> {
+class _FourthPageState extends State<FourthPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -15,27 +15,27 @@ class _FourthpageState extends State<Fourthpage> {
           body: SingleChildScrollView(
             child: Column(
               children: [
-                Container(padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                Container(padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
                   color: Colors.blue,
                   child: Row(
                     children: [
-                      Icon(Icons.arrow_back,color: Colors.white,size: 20),
-                      SizedBox(
+                      const Icon(Icons.arrow_back,color: Colors.white,size: 20),
+                      const SizedBox(
                         width: 10,
                       ),
-                      Text('Fond & Book',
+                      const Text('Fond & Book',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                       ),
                       ),
-                      Spacer(
+                      const Spacer(
                         flex: 2,
                       ),
                       Column(
                         children: [
-                          Text('Location',
+                          const Text('Location',
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w500,
@@ -43,7 +43,7 @@ class _FourthpageState extends State<Fourthpage> {
                           ),
                           ),
                           Row(
-                            children: [
+                            children: const [
                               Text('Banglore',
                               style: TextStyle(
                                 color: Colors.white,
@@ -61,14 +61,14 @@ class _FourthpageState extends State<Fourthpage> {
                 ),
 
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                   color: Colors.black12,
                 ),
                   child: Padding(
                     padding: const EdgeInsets.all(20.0),
                     child: TextField(
                       decoration: InputDecoration(
-                        prefixIcon: Padding(
+                        prefixIcon: const Padding(
                           padding: EdgeInsets.all(15.0),
                           child: Icon(Icons.search,size: 20,color: Colors.black,
                           )
@@ -77,7 +77,7 @@ class _FourthpageState extends State<Fourthpage> {
                         fillColor: Colors.white,
                         hintText: 'Search Doctor Specialities Clinics Hospitals',
                         border: OutlineInputBorder(
-                         borderSide: BorderSide(
+                         borderSide: const BorderSide(
                            color: Colors.white10,
                            width: 1,
                          ),
@@ -88,11 +88,11 @@ class _FourthpageState extends State<Fourthpage> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(20),
                   child: Column(
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Text('search by health concern',
                           style: TextStyle(
                             color: Colors.black,
@@ -109,15 +109,15 @@ class _FourthpageState extends State<Fourthpage> {
                           ),)
                         ],
                       ),
-                      Container(
+                      SizedBox(
                         height: 220,
                         child: GridView.builder(
                             itemCount: 6,
-                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 3
                             ), itemBuilder: (ctx, index){
                           return Container(
-                            margin: EdgeInsets.only(right: 13,top: 13,left: 13),
+                            margin: const EdgeInsets.only(right: 13,top: 13,left: 13),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                             ),
@@ -130,7 +130,7 @@ class _FourthpageState extends State<Fourthpage> {
                                     fit: BoxFit.cover,
                                     ),
                                   ),
-                                  Text('Piles surgery',textAlign: TextAlign.center,
+                                  const Text('Piles surgery',textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 10,
@@ -144,11 +144,11 @@ class _FourthpageState extends State<Fourthpage> {
                     ],
                   ),
                 ),
-                Container(padding: EdgeInsets.symmetric(horizontal: 20, vertical: 2),
+                Container(padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 2),
                   child: Column(
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Text('Search by Speciality',
                            style: TextStyle(
                              color: Colors.black,
@@ -160,15 +160,15 @@ class _FourthpageState extends State<Fourthpage> {
                           SizedBox(),
                         ],
                       ),
-                      Container(
+                      SizedBox(
                         height: 300,
                         child: GridView.builder(
                             itemCount: 8,
-                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 2,childAspectRatio: 2,
                             ), itemBuilder: (ctx, index){
                           return Container(
-                            margin: EdgeInsets.all(2),
+                            margin: const EdgeInsets.all(2),
                             decoration: BoxDecoration(color: Colors.black12,
                               borderRadius: BorderRadius.circular(2),
                             ),
@@ -181,10 +181,10 @@ class _FourthpageState extends State<Fourthpage> {
                                     width: 50,
                                     fit: BoxFit.cover,
                                   ),
-                                ),SizedBox(
+                                ),const SizedBox(
                                   width: 10,
                                 ),
-                                Text('Piles surgery',textAlign: TextAlign.center,
+                                const Text('Piles surgery',textAlign: TextAlign.center,
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 10,
@@ -202,11 +202,11 @@ class _FourthpageState extends State<Fourthpage> {
             ),
           ),
           bottomNavigationBar: Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: InkWell(
               onTap: () {},
               child: Container(
-                padding: EdgeInsets.all(2),
+                padding: const EdgeInsets.all(2),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.lightBlue,
@@ -214,8 +214,8 @@ class _FourthpageState extends State<Fourthpage> {
                 child: TextButton(
                   onPressed: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => Fifthpage()));
-                  }, child: Text('Next',
+                        context, MaterialPageRoute(builder: (context) => const FifthPage()));
+                  }, child: const Text('Next',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 20,

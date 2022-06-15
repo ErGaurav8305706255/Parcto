@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:parcto/lifestyle.dart';
 import 'package:parcto/medical.dart';
@@ -6,8 +5,8 @@ import 'package:parcto/personal.dart';
 
 import 'constant/string_constant.dart';
 
-class Fifthpage extends StatelessWidget {
-  const Fifthpage({Key? key}) : super(key: key);
+class FifthPage extends StatelessWidget {
+  const FifthPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +15,7 @@ class Fifthpage extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
               backgroundColor: Colors.indigo,
-              leading: IconButton(
+              leading: const IconButton(
                 onPressed: null,
                 icon: Icon(
                   Icons.arrow_back,
@@ -24,7 +23,7 @@ class Fifthpage extends StatelessWidget {
                 ),
               ),
               title: Text(StringConstants.name),
-              bottom: (TabBar(
+              bottom: (const TabBar(
                 tabs: [
                   Tab(text: 'Personal',
                   ),
@@ -38,18 +37,18 @@ class Fifthpage extends StatelessWidget {
               )
               )
           ),
-          body: TabBarView(children: [
+          body: const TabBarView(children: [
             Personal(),
             Medical(),
             Lifestyle(),
           ]),
 
           bottomNavigationBar: Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: InkWell(
               onTap: () {},
               child: Container(
-                padding: EdgeInsets.all(2),
+                padding: const EdgeInsets.all(2),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.lightBlue,

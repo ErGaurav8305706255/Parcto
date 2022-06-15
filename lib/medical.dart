@@ -5,43 +5,40 @@ class Medical extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appTitle = 'Flutter Basic List Demo';
 
-    return Container(
-      child:  ListView(
-        children: <Widget>[
-          ListTile(
-            title: Text('Allergies'),
-            trailing: Text('No'),
-          ),
-          Divider(),
-          ListTile(
-            title: Text('Current medication'),
-            trailing: Text('add medication'),
-          ),
-          Divider(),
-          ListTile(
-            title: Text('Past medication'),
-            trailing: Text('add medication'),
-          ),
-          Divider(),
-          ListTile(
-            title: Text('Cronic Diseases'),
-            trailing: Text('add diseases'),
-          ),
-          Divider(),
-          ListTile(
-            title: Text('Injuries'),
-            trailing: Text('add incident'),
-          ),
-          Divider(),
-          ListTile(
-            title: Text('Surgeries'),
-            trailing: Text('add Surgeries'),
-          ),
+    return ListView(
+      children: const <Widget>[
+        ListTile(
+          title: Text('Allergies'),
+          trailing: Text('No'),
+        ),
+        Divider(),
+        ListTile(
+          title: Text('Current medication'),
+          trailing: Text('add medication'),
+        ),
+        Divider(),
+        ListTile(
+          title: Text('Past medication'),
+          trailing: Text('add medication'),
+        ),
+        Divider(),
+        ListTile(
+          title: Text('Cronic Diseases'),
+          trailing: Text('add diseases'),
+        ),
+        Divider(),
+        ListTile(
+          title: Text('Injuries'),
+          trailing: Text('add incident'),
+        ),
+        Divider(),
+        ListTile(
+          title: Text('Surgeries'),
+          trailing: Text('add Surgeries'),
+        ),
 
-        ],
-      ),
+      ],
     );
 
   }
